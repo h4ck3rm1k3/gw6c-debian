@@ -29,7 +29,7 @@
 PWD           :=$(shell pwd)
 PLATFORM_DIR  :=$(PWD)/platform
 OBJS_DIR      :=$(PWD)/objs
-BIN_DIR       :=$(PWD)/bin
+BIN_DIR       :=$(PWD)/usr/sbin
 TARGET        :=$(BIN_DIR)/gw6c
 GW6CPAL_DIR   :=$(PWD)/../gw6c-pal
 GW6CPAL_INCDIR:=$(GW6CPAL_DIR)/out_inc
@@ -46,7 +46,7 @@ PLATFORM      :=$(shell [ -z "$(platform)" ] && uname | tr "[A-Z]" "[a-z]" || ec
 SUPPORTED_PLATFORMS=linux netbsd freebsd openbsd darwin sunos dongle6
 
 INSTALL_DIR   :=$(DESTDIR)
-INSTALL_BIN   :=$(INSTALL_DIR)/bin
+INSTALL_BIN   :=$(INSTALL_DIR)/usr/sbin
 INSTALL_MAN   :=$(INSTALL_DIR)/man
 INSTALL_TEMPL :=$(INSTALL_DIR)/template
 

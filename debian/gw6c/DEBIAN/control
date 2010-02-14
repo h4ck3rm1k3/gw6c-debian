@@ -2,7 +2,7 @@ Package: gw6c
 Version: 6.0.1-1
 Architecture: i386
 Maintainer: James Michael DuPont <mdupont@introspector-mail>
-Installed-Size: 316
+Installed-Size: 328
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libssl0.9.8 (>= 0.9.8f-5), libstdc++6 (>= 4.4.0)
 Section: unknown
 Priority: extra

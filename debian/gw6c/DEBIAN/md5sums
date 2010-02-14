@@ -1,10 +1,10 @@
 191eb6ab39544c68e3b44cb5707b318c  template/README
 89dd883ca3eb3957caaf1244a578dda0  template/linux.sh
-f5c81c9e561c7217ac23e3791a8952f7  bin/gw6c
-9fc129c0b5bbea38cc0b2aad037be148  bin/gw6c.conf.sample
-9fc129c0b5bbea38cc0b2aad037be148  bin/gw6c.conf
 5148f440e27ab10c71c28edaf1d8f0c7  man/man5/gw6c.conf.5
 5408ab143560f86e1e82627d2bef92a0  man/man8/gw6c.8
+a2b1f9675e4979a3b1dcd41d9019c785  usr/sbin/gw6c
+9fc129c0b5bbea38cc0b2aad037be148  usr/sbin/gw6c.conf.sample
+9fc129c0b5bbea38cc0b2aad037be148  usr/sbin/gw6c.conf
 3bacc119eaff5014bb05ac90927e505d  usr/share/doc/gw6c/tsp-last-server.txt
 5a9126eb65bc0c5f432030f5e8d47251  usr/share/doc/gw6c/README
 cd4195f841b61dbaf7374319e505b858  usr/share/doc/gw6c/tsp-broker-list.txt

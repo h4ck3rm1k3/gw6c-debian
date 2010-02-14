@@ -7,4 +7,5 @@
 #
 
 # Additional options that are passed to the Daemon.
-DAEMON_OPTS="/bin/gw6c.conf"
+# yes this should be in /etc/gw6c/gw6c.conf
+DAEMON_OPTS="-f /usr/sbin/gw6c.conf"
