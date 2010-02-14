@@ -4,6 +4,7 @@ dh_install
 dh_installchangelogs
 dh_installdocs
 dh_installexamples
+dh_installinit
 dh_installman
 dh_link
 dh_strip.pkg-create-dbgsym
