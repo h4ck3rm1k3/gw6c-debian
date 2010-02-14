@@ -1,0 +1,14 @@
+191eb6ab39544c68e3b44cb5707b318c  template/README
+89dd883ca3eb3957caaf1244a578dda0  template/linux.sh
+ea807c6608710528df1bfb9a8fb64fe6  bin/gw6c
+9fc129c0b5bbea38cc0b2aad037be148  bin/gw6c.conf.sample
+9fc129c0b5bbea38cc0b2aad037be148  bin/gw6c.conf
+5148f440e27ab10c71c28edaf1d8f0c7  man/man5/gw6c.conf.5
+5408ab143560f86e1e82627d2bef92a0  man/man8/gw6c.8
+3bacc119eaff5014bb05ac90927e505d  usr/share/doc/gw6c/tsp-last-server.txt
+5a9126eb65bc0c5f432030f5e8d47251  usr/share/doc/gw6c/README
+cd4195f841b61dbaf7374319e505b858  usr/share/doc/gw6c/tsp-broker-list.txt
+cef81d340570cf3ec730c99fc642a661  usr/share/doc/gw6c/changelog.Debian.gz
+757e70d17265f28a51d3e43b117e8c58  usr/share/doc/gw6c/README.Debian
+0e03e9f0023f12b0ed2aa41b46bbad89  usr/share/doc/gw6c/copyright
+02b4115fb5e946bbe06c1337e0e37eb2  usr/share/doc/gw6c/CLIENT-LICENSE.TXT

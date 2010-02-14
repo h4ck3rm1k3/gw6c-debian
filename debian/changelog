@@ -1,0 +1,5 @@
+gw6c (6.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- James Michael DuPont <mdupont@introspector-mail>  Sat, 13 Feb 2010 16:28:28 +0100

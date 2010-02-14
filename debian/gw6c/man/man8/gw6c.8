@@ -1,0 +1,106 @@
+.\"
+.\"  Copyright (c) 2007 Hexago Inc. All rights reserved.
+.\"
+.\"  For license information refer to CLIENT-LICENSE.TXT
+.\"
+.\" $Id: gw6c.8,v 1.5 2007/05/11 20:09:19 cnepveu Exp $
+.\"
+.Dd May 7, 2007
+.Dt GW6C 8
+.Os Gateway6 Client
+.Sh NAME
+.Nm gw6c
+.Nd Gateway6 Client
+.Sh SYNOPSIS
+.Nm gw6c
+.Op Fl h
+.Op Fl ?\&
+.Nm gw6c
+.Op Fl c
+.Nm gw6c
+.Op Fl f Ar config_file
+.Op Fl i Ar interface_name
+.Op Fl u Ar interface_name
+.Op Fl s Ar interface_name
+.Op Fl r Ar retry_delay
+.Sh DESCRIPTION
+.Nm gw6c
+provides a means to configure a tunnel obtained from a tunnel server that supports 
+the tunnel setup protocol (TSP).
+.Nm gw6c
+will connect to a tunnel server and request a tunnel according to the specifications 
+given in the configuration file.  As a background process, it will then monitor the 
+state of the tunnel.  In the event of a timeout, gw6c will establish a new tunnel.
+.Pp
+.Nm gw6c
+currently supports three types of tunnels:  
+.Pp
+.Bl -tag -width 
+.It Sy - v6v4 (IPv6 over IPv4)
+Supported on FreeBSD, NetBSD, OpenBSD, Linux, Windows, Solaris, Darwin and OpenWRT.
+.Pp
+.It Sy - v6udpv4 (IPv6 over UDP over IPv4)
+Supported on FreeBSD, Linux, Windows, Darwin and OpenWRT.
+.Pp
+.It Sy - v4v6 (IPv4 over IPv6 (DSTM))
+Supported on FreeBSD and Windows.
+.Pp
+.El
+.Sh ARGUMENTS
+The following options are available:
+.Bl -tag -width indent
+.It Fl h, ?\&
+Displays a short usage summary and quits.
+.Pp
+.It Fl c
+Runs a simple check on your configuration file for errors.
+.Pp
+.It Fl f Ar configuration_file
+Specifies a different configuration file.  
+.br
+Default is /installdir/bin/gw6c.conf. 
+.Pp
+.It Fl s Ar interface_name
+Overrides 
+.Nm client_v4 
+in 
+.Xr gw6c.conf 5 
+.Pp
+.It Fl i Ar interface_name
+Overrides 
+.Nm if_tunnel_v6v4 
+in 
+.Xr gw6c.conf 5 
+.Pp
+.It Fl u Ar interface_name
+Overrides 
+.Nm if_tunnel_v6udpv4 
+in 
+.Xr gw6c.conf 5 
+.Pp
+.It Fl r Ar retry_delay
+Overrides
+.Nm retry_delay
+in
+.Xr gw6c.conf 5
+.Pp
+.El
+.Sh SEE ALSO
+.Xr gw6c.conf 5
+.br
+http://www.hexago.com
+.Sh ACKNOWLEDGMENT
+This software uses code taken from other organizations as :
+.Bl -tag -width indent
+.It - Ar "RSA data security for md5."
+.It - Ar "The Apache Software Foundation for Base64 encoding and decoding."
+.El
+.Sh AUTHORS
+Hexago Inc.
+.br
+http://www.hexago.com
+.br
+support@go6.net
+.br
+support@hexago.com
+.br

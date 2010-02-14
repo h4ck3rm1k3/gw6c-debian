@@ -1,0 +1,11 @@
+Package: gw6c-doc
+Source: gw6c
+Version: 6.0.1-1
+Architecture: all
+Maintainer: James Michael DuPont <mdupont@introspector-mail>
+Installed-Size: 32
+Section: unknown
+Priority: extra
+Homepage: <insert the upstream URL, if relevant>
+Description: documentation for gw6c
+ <insert long description, indented with spaces>

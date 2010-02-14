@@ -1,0 +1,28 @@
+$ Id: $
+------------------------------------------------------------------------------
+Copyright (c) 2007 Hexago Inc.  All rights reserved.
+------------------------------------------------------------------------------
+
+This directory contains the Gateway6 Client Configuration Subsystem.
+
+Subdirectories:
+
+  .\gw6cconfig\     - Contains the include files of the Configuration
+                      Subsystem.
+  .\src\            - Contains the source files of the Configuration
+                      Subsystem.
+  .\lib\            - Will contain the built Gateway6 Client Configuration
+                      Subsystem library.
+  .\winbuild\       - Visual Studio project directories for winpc and wince.
+
+Files:
+  .\Makefile        - Makefile to build gw6c-config on UNIX-like platforms.
+  .\build-winpc.cmd - Command script to build gw6c-config on Windows (XP, Vista).
+  .\build-wince.cmd - Command script to build gw6c-config on Windows Embedded.
+
+Applications that use this library should modify the CFLAGS to add the 
+following:
+  -I<path-to-gw6cconfig>/gw6cconfig
+LDFLAGS:
+  -L<path-to-gw6cconfig>/lib
+  -lgw6cconfig

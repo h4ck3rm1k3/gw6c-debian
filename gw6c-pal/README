@@ -1,0 +1,31 @@
+$ Id: $
+------------------------------------------------------------------------------
+Copyright (c) 2007 Hexago Inc.  All rights reserved.
+------------------------------------------------------------------------------
+
+This directory contains the Gateway6 Client Platform Abstraction Layer(PAL).
+
+Subdirectories:
+  .\defs\           - Contains the API definitions that the header files for
+                      the platform must conform to.
+
+  .\platform\       - Platform-specific implementation of the GW6C PAL.
+
+  .\out_inc\        - Will contain the header files for the platform specified
+                      when `make' was invoked.
+
+  .\out_lib\        - Will contain the built Gateway6 Client Platform 
+                      Abstraction Layer library.
+
+Files:
+  .\Makefile        - Makefile to build PAL on UNIX-like platforms.
+  .\build-winpc.cmd - Command script to build PAL on Windows (XP, Vista).
+  .\build-wince.cmd - Command script to build PAL on Windows Embedded.
+
+Applications that use this library should modify the CFLAGS to add the 
+following:
+  -I<path-to-gw6cpal>/defs
+  -I<path-to-gw6cpal>/out_inc
+LDFLAGS:
+  -L<path-to-gw6cpal>/out_lib
+  -lgw6cpal
